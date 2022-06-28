@@ -61,7 +61,7 @@ function App() {
         <span>{linea1}</span>
         <span>{linea2}</span>
         <br />
-        <img src={"/reactp1/" + imagen + ".jpg"} width="512px" height="512px" />
+        <img src={"./images/" + imagen + ".jpg"} width="512px" height="512px" />
       </div>
       <button onClick={onCliclExportar}>Exportar</button>
 
