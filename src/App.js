@@ -3,9 +3,7 @@ import "./App.css";
 import { useState } from "react";
 import html2canvas from "html2canvas";
 
-import Csonroja from "./images/Csonroja.gif";
-import ChicaTimida from "./images/ChicaTimida.gif";
-import Ccubre from "./images/Ccubre.gif";
+
 
 function App() {
   const [linea1, setLinea1] = useState("");
