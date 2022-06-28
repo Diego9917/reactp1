@@ -79,6 +79,15 @@ function App() {
           No es tan bonito pero como dicen por ahi xd si lo subes perfecto es pq
           te tardaste en subirlo
         </h2>
+
+        <p>
+          Psdta: pasó un dia y quize subirlo aqui, a github pages... llevo 8 horas intentando que las imagenes
+          se muestren uy noooooooooooo y solo por eso voy a dejar la solución definitiva aqui.
+
+          paso 1: colocarle el . aqui src = " . /images/" + imagen + ".jpg"
+          paso 2: crer un .env con el siguiente contenido : PUBLIC_URL=.
+          paso 3: sea feliz
+        </p>
       </div>
     </div>
   );
