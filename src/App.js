@@ -3,6 +3,7 @@ import "./App.css";
 import { useState } from "react";
 import html2canvas from "html2canvas";
 
+
 function App() {
 
   const [linea1, setLinea1] = useState("");
@@ -55,7 +56,7 @@ function App() {
         <span>{linea1}</span>
         <span>{linea2}</span>
         <br />
-        <img src={"/images/" + imagen + ".jpg"} width="512px" height="512px" />
+        <img src={"src/images/" + imagen + ".gif"} width="512px" height="512px" />
 
       </div>
       <button onClick={onCliclExportar}>Exportar</button>
