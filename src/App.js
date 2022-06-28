@@ -39,6 +39,9 @@ function App() {
         <option value="chicatimida">Chica timida</option>
         <option value="csonroja">C sonroja</option>
         <option value="ccubre">C cubre</option>
+        <option value="chicatimida gif">Chica timida gif</option>
+        <option value="csonroja gif">C sonroja gif</option>
+        <option value="ccubre gif">C cubre gif</option>
       </select>
       <br />
       <input onChange={onChangeLinea1} type="text" placeholder="parte de arriba"/>
@@ -51,7 +54,7 @@ function App() {
         <span>{linea1}</span>
         <span>{linea2}</span>
         <br />
-        <img src={"/images/" + imagen + ".gif"} width="512px" height="512px" />
+        <img src={"/images/" + imagen + ".jpg"} width="512px" height="512px" />
 
       </div>
       <button onClick={onCliclExportar}>Exportar</button>
