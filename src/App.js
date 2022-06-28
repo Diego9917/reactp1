@@ -23,9 +23,9 @@ function App() {
   const onCliclExportar = function (evento) {
     html2canvas(document.querySelector("#stiker")).then((evento) => {
       document.body.appendChild(evento);
-      var img = evento.toDataURL("image/png");
+      var img = evento.toDataURL("image/jpg");
       var link = document.createElement("a");
-      link.download = "meme.png";
+      link.download = "meme.jpg";
       link.href = img;
       link.click();
     });
