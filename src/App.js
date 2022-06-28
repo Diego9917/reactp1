@@ -25,9 +25,9 @@ function App() {
   const onCliclExportar = function (evento) {
     html2canvas(document.querySelector("#stiker")).then((evento) => {
       document.body.appendChild(evento);
-      var img = evento.toDataURL("image/gif");
+      var img = evento.toDataURL("image/jpg");
       var link = document.createElement("a");
-      link.download = "meme.gif";
+      link.download = "meme.jpg";
       link.href = img;
       link.click();
     });
@@ -61,7 +61,7 @@ function App() {
         <span>{linea1}</span>
         <span>{linea2}</span>
         <br />
-        <img src={"./reactp1/" + imagen + ".gif"} width="512px" height="512px" />
+        <img src={"/reactp1/" + imagen + ".jpg"} width="512px" height="512px" />
       </div>
       <button onClick={onCliclExportar}>Exportar</button>
 
