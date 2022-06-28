@@ -1,19 +1,16 @@
 {
   "files": {
     "main.css": "/reactp1/static/css/main.5166ac4c.css",
-    "main.js": "/reactp1/static/js/main.945cea8d.js",
+    "main.js": "/reactp1/static/js/main.9cea0cf9.js",
     "static/js/787.15306c3a.chunk.js": "/reactp1/static/js/787.15306c3a.chunk.js",
-    "static/media/ChicaTimida.gif": "/reactp1/static/media/ChicaTimida.62f2e7b4d95b52affeb0.gif",
-    "static/media/Ccubre.gif": "/reactp1/static/media/Ccubre.4a590df95c32a7dcb047.gif",
-    "static/media/Csonroja.gif": "/reactp1/static/media/Csonroja.094f81eca56993f42837.gif",
     "static/media/logo.svg": "/reactp1/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/reactp1/index.html",
     "main.5166ac4c.css.map": "/reactp1/static/css/main.5166ac4c.css.map",
-    "main.945cea8d.js.map": "/reactp1/static/js/main.945cea8d.js.map",
+    "main.9cea0cf9.js.map": "/reactp1/static/js/main.9cea0cf9.js.map",
     "787.15306c3a.chunk.js.map": "/reactp1/static/js/787.15306c3a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5166ac4c.css",
-    "static/js/main.945cea8d.js"
+    "static/js/main.9cea0cf9.js"
   ]
 }
