@@ -56,7 +56,7 @@ function App() {
         <span>{linea1}</span>
         <span>{linea2}</span>
         <br />
-        <img src={"src/images/" + imagen + ".gif"} width="512px" height="512px" />
+        <img src={"/images/" + imagen + ".gif"} width="512px" height="512px" />
 
       </div>
       <button onClick={onCliclExportar}>Exportar</button>
