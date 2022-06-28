@@ -4,7 +4,7 @@ import { useState } from "react";
 import html2canvas from "html2canvas";
 
 function App() {
-  
+
   const [linea1, setLinea1] = useState("");
   const [linea2, setLinea2] = useState("");
   const [imagen, setImagen] = useState("");
@@ -37,12 +37,12 @@ function App() {
       <section><h1>Meme generator xd</h1></section>
       
       <select onChange={onChangeImagen}>
-        <option value="chicatimida">Chica timida</option>
-        <option value="csonroja">C sonroja</option>
-        <option value="ccubre">C cubre</option>
-        <option value="chicatimida_gif">Chica timida gif</option>
-        <option value="csonroja_gif">C sonroja gif</option>
-        <option value="ccubre_gif">C cubre gif</option>
+        <option value="Chicatimida">Chica timida</option>
+        <option value="Csonroja">C sonroja</option>
+        <option value="Ccubre">C cubre</option>
+        <option value="Chicatimida_gif">Chica timida gif</option>
+        <option value="Csonroja_gif">C sonroja gif</option>
+        <option value="Ccubre_gif">C cubre gif</option>
       </select>
       <br />
       <input onChange={onChangeLinea1} type="text" placeholder="parte de arriba"/>
