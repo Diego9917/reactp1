@@ -3,9 +3,11 @@ import "./App.css";
 import { useState } from "react";
 import html2canvas from "html2canvas";
 
+import Csonroja from "./images/Csonroja.gif";
+import ChicaTimida from "./images/ChicaTimida.gif";
+import Ccubre from "./images/Ccubre.gif";
 
 function App() {
-
   const [linea1, setLinea1] = useState("");
   const [linea2, setLinea2] = useState("");
   const [imagen, setImagen] = useState("");
@@ -25,9 +27,9 @@ function App() {
   const onCliclExportar = function (evento) {
     html2canvas(document.querySelector("#stiker")).then((evento) => {
       document.body.appendChild(evento);
-      var img = evento.toDataURL("image/jpg");
+      var img = evento.toDataURL("image/gif");
       var link = document.createElement("a");
-      link.download = "meme.jpg";
+      link.download = "meme.gif";
       link.href = img;
       link.click();
     });
@@ -35,45 +37,52 @@ function App() {
 
   return (
     <div className="App">
-      <section><h1>Meme generator xd</h1></section>
-      
+      <section>
+        <h1>Meme generator xd</h1>
+      </section>
+
       <select onChange={onChangeImagen}>
-        <option value="Chicatimida">Chica timida</option>
+        <option value="ChicaTimida">Chica timida</option>
         <option value="Csonroja">C sonroja</option>
         <option value="Ccubre">C cubre</option>
-        <option value="Chicatimida_gif">Chica timida gif</option>
-        <option value="Csonroja_gif">C sonroja gif</option>
-        <option value="Ccubre_gif">C cubre gif</option>
       </select>
       <br />
-      <input onChange={onChangeLinea1} type="text" placeholder="parte de arriba"/>
+      <input
+        onChange={onChangeLinea1}
+        type="text"
+        placeholder="parte de arriba"
+      />
       <br />
-      <input onChange={onChangeLinea2} type="text" placeholder="parte de abajo"/>
-      
-      
+      <input
+        onChange={onChangeLinea2}
+        type="text"
+        placeholder="parte de abajo"
+      />
 
       <div className="txtimagen" id="stiker">
         <span>{linea1}</span>
         <span>{linea2}</span>
         <br />
         <img src={"/images/" + imagen + ".gif"} width="512px" height="512px" />
-
       </div>
       <button onClick={onCliclExportar}>Exportar</button>
 
       <div className="txtintro">
-        <p>Como vieron anteriormente se trata de una pagina ultra útil con la que podrás hacer un meme feo partiendo de un gif
-        que selecciones. La idea era se pudiera descargar el gif xd pero por ahora no se pude, quizá en la actualizacion 1.2 que
-        le tengo preparada a esta maravilla de invensión moderna. gracias al profesor lucas por la idea xd
-        también queria actualizarlo para que se pudiera exportar cmo stiker de whatsapp pero wao no es tan easy.
-
-        
+        <p>
+          Como vieron anteriormente se trata de una pagina ultra útil con la que
+          podrás hacer un meme feo partiendo de un gif que selecciones. La idea
+          era se pudiera descargar el gif xd pero por ahora no se pude, quizá en
+          la actualizacion 1.2 que le tengo preparada a esta maravilla de
+          invensión moderna. gracias al profesor lucas por la idea xd también
+          queria actualizarlo para que se pudiera exportar cmo stiker de
+          whatsapp pero wao no es tan easy.
         </p>
-        <h2>No es tan bonito pero como dicen por ahi xd si lo subes perfecto es pq te tardaste en subirlo</h2>
+        <h2>
+          No es tan bonito pero como dicen por ahi xd si lo subes perfecto es pq
+          te tardaste en subirlo
+        </h2>
       </div>
     </div>
-    
-    
   );
 }
 
